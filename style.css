@@ -51,11 +51,10 @@ and (max-device-width : 500px) {
         z-index: 10;
         background: #fff;
         opacity: 0.7;
-        padding: 0.625rem 1.875rem;
+        padding: 0.5rem 1.7rem;
         border: 0.125rem solid transparent;
         border-radius: 1rem;
         letter-spacing: 0.125rem;
-        transition: 0.2s;
         top: 60%;
         left: 50%;
         transform: translate(-50%, 0);
@@ -68,6 +67,7 @@ and (max-device-width : 500px) {
     }
     
     .btn img{
+        width: 1.2rem;
         position: absolute;
         top : 50%;
         left: 5%;
@@ -76,14 +76,16 @@ and (max-device-width : 500px) {
     
     .btn a{
         font-family: 'Amatic SC', sans-serif;
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-size: 1.22rem;
+        font-weight: 700;
         color: #3E5598;
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
         left: 10%;
         top: 50%;
+        transform: translate(0, -50%);
+
     }
     
     .btn a:hover{
