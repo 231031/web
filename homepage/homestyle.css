@@ -48,6 +48,8 @@ header h1 {
     opacity: 0.95;
     border: 0.125rem solid #384c87;
     border-radius: 0.8rem;
+    width: 22rem;
+    height: 18rem;
     top: 12%;
     left: 3%;
 }
@@ -76,12 +78,15 @@ header h1 {
 }
 
 .content_sea {
+
     position: absolute;
     z-index: 10;
     background: #56689e;
     opacity: 0.9;
     border-radius: 0.8rem;
-    top: 20%;
+    width: 22rem;
+    height: 18rem;
+    top: 55%;
     left: 3%;
 }
 
@@ -90,7 +95,10 @@ header h1 {
     text-transform: uppercase;
     font-size: 2.2rem;
     font-family: 'Amatic SC', sans-serif;
-    margin: 1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .effect {
