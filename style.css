@@ -57,7 +57,8 @@ and (max-device-width : 700px) {
     }
     */
     .btn {
-        position: fixed;
+        position: absolute;
+        width: 51%;
         z-index: 10;
         background: #F7F5F4;
         opacity: 0.7;
@@ -65,7 +66,7 @@ and (max-device-width : 700px) {
         border: 0.125rem solid transparent;
         border-radius: 1rem;
         letter-spacing: 0.125rem;
-        top: 60%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, 0);
     }
@@ -80,7 +81,7 @@ and (max-device-width : 700px) {
         width: 1.2rem;
         position: absolute;
         top : 50%;
-        left: 5%;
+        left: 7%;
         transform: translate(0, -50%);
     }
     
@@ -92,7 +93,7 @@ and (max-device-width : 700px) {
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
-        left: 10%;
+        left: 13%;
         top: 50%;
         transform: translate(0, -50%);
 
