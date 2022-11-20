@@ -20,34 +20,32 @@ and (max-device-width : 700px) {
         background-repeat: repeat;
     }
 
+    .landing {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #3E5598;
+        z-index: 2;
+    }
+
     header {
-        position: fixed;
-        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         top: 20%;
-        left: 50%;
-        transform: translate(-50%, 0);
         z-index: 10;
     }
     
     header .name{
-        color: #fff;
+        color: #F7F5F4;
         text-transform: uppercase;
         cursor: pointer;
-        font-size: 2.1rem;
+        font-size: 2.9rem;
         font-family: 'Kalam', arial, helvetica, sans-serif;
     }
     
-    .landing {
-        position: absolute;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #3E5598;
-        transition: 0.5s;
-        z-index: 2;
-    }
+
     /*
     .landing video {
         position: absolute;
@@ -61,7 +59,7 @@ and (max-device-width : 700px) {
     .btn {
         position: fixed;
         z-index: 10;
-        background: #fff;
+        background: #F7F5F4;
         opacity: 0.7;
         padding: 0.5rem 1.7rem;
         border: 0.125rem solid transparent;
@@ -88,9 +86,9 @@ and (max-device-width : 700px) {
     
     .btn a{
         font-family: 'Amatic SC', sans-serif;
-        font-size: 1.22rem;
+        font-size: 1.3rem;
         font-weight: 700;
-        color: #3E5598;
+        color: #091B48;
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
@@ -124,23 +122,21 @@ and (min-width : 701px) {
         position: absolute;
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
         z-index: 5;
     }
 
     header {
-        position: fixed;
+        position: relative;
+        display: flex;
+        justify-content: center;
         text-align: center;
         top: 20%;
-        left: 50%;
-        transform: translate(-50%, 0);
         z-index: 10;
     }
     
     header .name{
-        color: #fff;
+        color: #F7F5F4;
         text-transform: uppercase;
         cursor: pointer;
         font-size: 6.5rem;
@@ -157,10 +153,10 @@ and (min-width : 701px) {
     }
     */
     .btn {
-        position: fixed;
+        position: absolute;
         z-index: 10;
         /*display: block;*/
-        background: #fff;
+        background: #F7F5F4;
         opacity: 0.7;
         padding: 0.625rem 1.875rem;
         border: 0.125rem solid transparent;
@@ -190,7 +186,7 @@ and (min-width : 701px) {
         font-family: 'Amatic SC', sans-serif;
         font-size: 2rem;
         font-weight: bold;
-        color: #3E5598;
+        color: #091B48;
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
