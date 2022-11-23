@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Amiri:wght@400;700&family=Kalam:wght@300;400;700&family=Kanit:wght@100;300;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +15,12 @@
     object-fit: cover;
 }
 
+.button_bg {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+}
+
 header {
     position: absolute;
     top: 0;
@@ -29,10 +35,45 @@ header {
 
 header h1 {
     font-family: 'Kalam', arial, helvetica, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 700;
     color: #111;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.remove_cover img{
+    z-index: 15;
+    position: absolute;
+    border-radius: 0.1rem;
+    width: 18.5rem;
+    height: 20.3rem;
+    top: 13%;
+    left: 2.9%;
+}
+
+.remove_cover button{
+    padding: 0.4rem;
+    position: absolute;
+    border-radius: 0.5rem;
+    z-index: 20;
+    left: 12.7%;
+    top: 42.4%;
+    transform: translate(-50%, 0);
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    width: 15rem;
+    border: 0.125rem solid transparent;
+    background: #FFE090;
+}
+
+.remove_cover button:hover {
+    cursor: pointer;
+    border: 0.125rem solid #FFE090;
+    background: transparent;
+    color: blue;
+
 }
 
 .content_heal {
@@ -44,56 +85,65 @@ header h1 {
     background-repeat: no-repeat;
     z-index: 10;
     position: absolute;
-    background: #F7F2DD;
+    background: #FFF1DC;
     opacity: 0.9;
-    border: 0.15rem solid #6B544A;
-    border-radius: 0.8rem;
-    width: 22rem;
-    height: 18rem;
-    top: 12%;
+    border: 0.12rem solid transparent;
+    border-radius: 1rem;
+    width: 18.5rem;
+    height: 20.5rem;
+    top: 13%;
     left: 3%;
 }
 
-.content_heal h2 {
-    color: #6B544A;
-    text-transform: uppercase;
-    font-size: 2.2rem;
-    font-family: 'Amatic SC', sans-serif;
-    font-weight: 700;
-    margin-top: 0.5rem;
+.content_heal button {
+    position: relative;
+    z-index: 20;
+    margin-top: 0.65rem;
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: solid transparent;
+    padding: 0.5rem;
+    background: #FFE090;
 }
 
-.quote {
+.content_heal button:hover {
+    cursor: pointer;
+    border: solid #FFE090;
+    background: transparent;
+    color: blue;
+
+}
+
+.content_heal img{
     z-index: 20;
     position: relative;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    height: 30vh;
-    width: 40vh;
-    overflow: hidden;
     background-position: center;
-    border-radius: 0.8rem;
+    border-radius: 0.7rem;
+    z-index: 30;
+    height: 33vh;
+    width: 35vh;
 }
 
-.content_sea {
 
+
+.content_sea {
     position: absolute;
     z-index: 10;
     background: #56689e;
     opacity: 0.9;
     border-radius: 0.8rem;
-    width: 22rem;
-    height: 18rem;
-    top: 55%;
+    width: 18.5rem;
+    height: 15rem;
+    top: 63%;
     left: 3%;
 }
 
 .content_sea h2 {
     color: #031753;
     text-transform: uppercase;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-family: 'Amatic SC', sans-serif;
     margin-top: 0.5rem;
     display: flex;
@@ -106,5 +156,35 @@ header h1 {
     z-index: 15;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
 
+.spotify {
+    position: absolute;
+    z-index: 15;
+    left: 78%;
+    top: 7%;
+}
+
+.spotify iframe {
+    border-radius: 0.7rem;
+}
+
+.button_spt {
+    position: absolute;
+    z-index: 15;
+    right: -3.5rem; 
+    top: 20%;
+    transform: rotate(-90deg);
+}
+
+.button_spt button {
+    margin: 0px;
+    width: 10rem;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: transparent;
 }
