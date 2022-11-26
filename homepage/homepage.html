@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Let me sea</title>
+    <title>Let Me Sea</title>
     <link rel="stylesheet" href="homestyle.css">
     
 </head>
@@ -12,10 +12,13 @@
     <header>
         <h1 class="name">Let me sea</h1>
     </header>
-    <div class="contain">
+    <div class="contain" id="contain_id">
         <div class="background">
             <img id="bg_img" src="image/sea.jpg" alt="Edit">
         </div>
+
+        <input type="file" accept="image/*" name="image" id="file" style="display: none">
+        <label for="file"><img src="image/icon_up1.png" class="upload_icon"></label>
 
         <div class="remove_cover">
             <img id='cover' src="image/cover.png">
@@ -39,12 +42,30 @@
             <button onclick="showSpotify()" id="btn_spotify">spotify</button>
         </div>
 
-        <div class="button_bg">
-            <button onclick="change_bg(1)" id="btn_bg1">bg1</button>
-            <button onclick="change_bg(2)" id="btn_bg2">bg2</button>
-            <button onclick="change_bg(3)" id="btn_bg3">bg3</button>
-            <button onclick="change_bg(4)" id="btn_bg4">bg4</button>
+        <div class="content_button">
+            <div class="button_bg">
+                <button onclick="change_bg(1)" id="btn_bg1"><img src="https://i.pinimg.com/originals/ef/21/20/ef212097b6111cd26f33b5373dbaf544.gif"></button>
+            </div>
+            <div class="button_bg">
+                <button onclick="change_bg(2)" id="btn_bg1"><img src="https://i.pinimg.com/originals/4e/80/38/4e8038228e029c3ddd9c7b90b293af9d.gif"></button>
+            </div>
+            <div class="button_bg">
+                <button onclick="change_bg(3)" id="btn_bg1"><img src="https://i.pinimg.com/originals/85/bf/2c/85bf2cd735d075bb9ece4be5996605b1.gif"></button>
+            </div>
+            <div class="button_bg">
+                <button onclick="change_bg(4)" id="btn_bg1"><img src="image/morning3.gif"></button>
+            </div>
+            <div class="button_bg">
+                <button onclick="change_bg(5)" id="btn_bg1"><img src="https://doc-0s-74-docs.googleusercontent.com/docs/securesc/uvfr2sthpviu63v494ormsqtsd8oacpc/1s73f0vbu88ids4qn63qn7v5u7s435mg/1669404225000/00193915402458812142/00193915402458812142/1mS0z6qKI17eJsaIjQl2DBaxw2ACsFPEM?e=view&ax=AEKYgyRMJ5be5gS8Fe174hpgg3O76AlePNkTczulq6ZyHJ2ORmf3ALXJ7jyx6XpVnaEaLcIUF4Y6c8wbd8FCgv5FUnXZb8VBTArFV1uy8S1KSoJJNHKxJEZhE0nu-adLNHQy6Q10Ln3OfjvgS5d1hhPN0fwVBNtuhcc9j8brKfUkII4bWzxWQj2apirRyU6QKZiiZbDYPRIliu77yQgWXdCZPbXilfrvWpxiKDBgseE7QTwHdq8HUoxRBnSuseLX7RxQWEq6_r1iqCmgSzvRKTCZItycQvvWEIU52sq7MCfGtPNrVlaXkWN8vViSPhrRqYh1ggAwCFg829CFruNuErBTaQRFp3uzIFAy1yvW-eZNHp5tY8hicT-gUEOSoLsF8_-Du8BOhUxdF1N6PMpS7-SbSjtkb1It-387FQpt-iZS2--vv8IhFFkcCgl-Dx8BsZDrfJdmScqDcs_WjL1YFpnvCu3N_Y5rSbQmTaYAJNuAJUzLFCahKANthp6FgmEwUknPAhfbkgx4Jeilz630nxCUQ1tjGJETf5XGmun25gQMDIX5BLYbVYseAmUTYpoKWS1xWTKyJY5srMvAOgJkC5B0xWeW9V6PZf8EQF9IoWdflsmMw4e3mmVh7D4GM0plllduYO3MMMDkpEM_3o8qb7mKFeUDSyKozR5vB6FMcsApV--7JG5PmW0JPsd4HtmpNxNxTv8XLfqQ4U9B5rLlcwSZ-rWg-OqqTp3MXmZU7C39lGwIMY9MZeQj5jvDZc_Deamlp0alwiEop730VLte_5EInVjzNgsaXwEBZh1w1Uws8fIZUZ5_008LP9kLIbGer8ImsWMA37AgZDLrJ4yZb7H9InRrliwo2h7j52s266pJYWY9W6vb7SCsLhT0lwjLnCUMrg&uuid=eb3c21de-0adf-4ddf-aa83-ab1e0f4a28a4&authuser=0&nonce=1pbgkn5mk3ana&user=00193915402458812142&hash=e47o62afjttnvf842faqmde7le3tstrc"></button>
+            </div>
+
+
+            
         </div>
+        
+       
+            
+            
     </div>
     
 
