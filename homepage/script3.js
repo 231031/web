@@ -35,7 +35,7 @@ function remove_img(){
 }
 
 function showSpotify() {
-	var x = document.getElementById("spotify_box");
+	let x = document.getElementById("spotify_box");
 	if (x.style.display === "none") {
 	  x.style.display = "block";
 	} else {
@@ -55,7 +55,7 @@ function change_bg(clicked_id)
       else if (clicked_id == 4) {
         document.getElementById("bg_img").src="image/morning3.gif";
       } else {
-		document.getElementById("bg_img").src="https://doc-0s-74-docs.googleusercontent.com/docs/securesc/uvfr2sthpviu63v494ormsqtsd8oacpc/1s73f0vbu88ids4qn63qn7v5u7s435mg/1669404225000/00193915402458812142/00193915402458812142/1mS0z6qKI17eJsaIjQl2DBaxw2ACsFPEM?e=view&ax=AEKYgyRMJ5be5gS8Fe174hpgg3O76AlePNkTczulq6ZyHJ2ORmf3ALXJ7jyx6XpVnaEaLcIUF4Y6c8wbd8FCgv5FUnXZb8VBTArFV1uy8S1KSoJJNHKxJEZhE0nu-adLNHQy6Q10Ln3OfjvgS5d1hhPN0fwVBNtuhcc9j8brKfUkII4bWzxWQj2apirRyU6QKZiiZbDYPRIliu77yQgWXdCZPbXilfrvWpxiKDBgseE7QTwHdq8HUoxRBnSuseLX7RxQWEq6_r1iqCmgSzvRKTCZItycQvvWEIU52sq7MCfGtPNrVlaXkWN8vViSPhrRqYh1ggAwCFg829CFruNuErBTaQRFp3uzIFAy1yvW-eZNHp5tY8hicT-gUEOSoLsF8_-Du8BOhUxdF1N6PMpS7-SbSjtkb1It-387FQpt-iZS2--vv8IhFFkcCgl-Dx8BsZDrfJdmScqDcs_WjL1YFpnvCu3N_Y5rSbQmTaYAJNuAJUzLFCahKANthp6FgmEwUknPAhfbkgx4Jeilz630nxCUQ1tjGJETf5XGmun25gQMDIX5BLYbVYseAmUTYpoKWS1xWTKyJY5srMvAOgJkC5B0xWeW9V6PZf8EQF9IoWdflsmMw4e3mmVh7D4GM0plllduYO3MMMDkpEM_3o8qb7mKFeUDSyKozR5vB6FMcsApV--7JG5PmW0JPsd4HtmpNxNxTv8XLfqQ4U9B5rLlcwSZ-rWg-OqqTp3MXmZU7C39lGwIMY9MZeQj5jvDZc_Deamlp0alwiEop730VLte_5EInVjzNgsaXwEBZh1w1Uws8fIZUZ5_008LP9kLIbGer8ImsWMA37AgZDLrJ4yZb7H9InRrliwo2h7j52s266pJYWY9W6vb7SCsLhT0lwjLnCUMrg&uuid=eb3c21de-0adf-4ddf-aa83-ab1e0f4a28a4&authuser=0&nonce=1pbgkn5mk3ana&user=00193915402458812142&hash=e47o62afjttnvf842faqmde7le3tstrc";
+		document.getElementById("bg_img").src="";
 	  }
     //document.getElementById("bg_img").src="image/afternoon.jpg";
 }
@@ -73,12 +73,12 @@ image_input.addEventListener("change", function() {
 })
 */
 document.getElementById('file').onchange = function (evt) {
-    var tgt = evt.target || window.event.srcElement,
+    let tgt = evt.target || window.event.srcElement,
         files = tgt.files;
     
     // FileReader support
     if (FileReader && files && files.length) {
-        var fr = new FileReader();
+        let fr = new FileReader();
         fr.onload = function () {
             document.getElementById('bg_img').src = fr.result;
         }
