@@ -26,7 +26,6 @@
     left: 73%;
     background-color: #56689e;
     border-radius: 0.5rem;
-    opacity: 0.8;
     width: 23.85rem;
     height: 5rem;
 }
@@ -237,7 +236,6 @@ header h1 {
     border-top-right-radius: 0.5rem;
     border: transparent;
     background: #FFE090;
-    opacity: 0.85;
 }
 
 .button_spt button:hover {
