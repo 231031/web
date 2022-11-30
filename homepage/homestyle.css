@@ -196,11 +196,12 @@ header h1 {
     justify-content: center;
 }
 
-.effect {
+#sound1{
     position: relative;
     z-index: 15;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: transparent;
 }
 
 .spotify {
@@ -242,4 +243,10 @@ header h1 {
 
 .button_spt button:hover {
     cursor: pointer;
+}
+
+.soundclound iframe {
+    position: absolute;
+    z-index: 10;
+
 }

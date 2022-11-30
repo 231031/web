@@ -7,6 +7,12 @@
     <title>Let Me Sea</title>
     <link rel="stylesheet" href="homestyle.css">
     
+    <meta name="language" content="EN" />
+    <meta name="cache-control" content="no-cache" />
+    <link rel="shortcut icon" type="image/png" src="image/iconSea.png" />
+    <link rel="stylesheet" href="https://essential-audio-player.net/css/_fonts.css" />
+    <link rel="stylesheet" href="essential_audio.css" />
+    <script src="essential_audio.js"></script>
 </head>
 <body>
     <header>
@@ -32,8 +38,14 @@
 
         <div class="content_sea">
             <h2>sea effects</h2>
-            <div class="effect"></div>
+            <div class="effect">
+                <!--<source src="sound/sound_select.wav" type="audio/wav" id="sound1" class="essential_audio">-->
+                <div class="essential_audio" data-url="https://essential-audio-player.net/audio/Song.mp3"></div>
+                <div class="essential_audio" data-url="https://essential-audio-player.net/audio/Song.mp3"></div>
+
+            </div>
         </div>
+
         <div class="spotify">
             <iframe id="spotify_box" style="display: none" src="https://open.spotify.com/embed/playlist/0StLQ5lcHjPN44U1yawGCF?utm_source=generator&theme=0" width="260" height="330" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
@@ -57,15 +69,8 @@
             </div>
             <div class="button_bg">
                 <button onclick="change_bg(5)" id="btn_bg1"><img src="https://i.pinimg.com/originals/be/1a/33/be1a338704efc57093b6dec8e196439b.gif"></button>
-            </div>
-
-
-            
+            </div>  
         </div>
-        
-       
-            
-            
     </div>
     
 
